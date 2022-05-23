@@ -1,0 +1,83 @@
+.new{
+    display: flex;
+    width: 100%
+    ;
+    .newContainer{
+        flex: 6 ;
+        
+        .top, .bottom {
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(139, 112, 236, 0.47);
+            -moz-box-shadow: 2px 4px 10px 1px rgba(139, 112, 236, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(139, 112, 236, 0.47);
+            padding: 10px;
+            margin: 20px;
+            border-radius: 15px;
+            display: flex;
+
+            h1 {
+                color: lightgray;
+                font-size: 20px;
+            }
+
+            .left {
+                flex: 1;
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border: 1px solid rgba(127, 65, 234, 0.601);
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+            }
+
+            .right {
+                flex: 2;
+
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    justify-content: space-around;
+                    
+
+                    .formInput{
+                        width: 40%;
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .icon {
+                                cursor: pointer;
+                            }
+                        }
+                        
+                        input{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                        }
+                    }
+
+                    button{
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: rgba(124, 113, 239, 0.388);
+                        color: gray;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    }
+
+                }
+            }
+        }
+            
+    }
+}
